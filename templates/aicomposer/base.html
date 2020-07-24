@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+
+    </title>
+    {% load static %}
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tone/14.4.9/Tone.js'></script>
+    <link rel="stylesheet"  href="{% static 'aicomposer/style.css' %}">
+</head>
+<body>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/application">Application</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Team</a></li>
+    </ul>
+    {% block content %}
+    {% endblock %}
+    
+    <script src="{% static 'aicomposer/script.js' %}"></script>
+    <script src="{% static 'aicomposer/playsong.js' %}"></script>
+ 
+</body>
+</html>

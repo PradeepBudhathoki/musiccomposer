@@ -1,0 +1,17 @@
+{% extends 'aicomposer/base.html' %}
+
+    {% block content %}
+    
+      <button type='button' id='play/stop'>PLAY/STOP</button>
+      <button type='button' id='pause/resume'>PAUSE/RESUME</button>
+      <div id='container'>
+      </div>
+      <script>
+        var data='{{data|escapejs}}';
+        data = data.replace(/'/g, '"');
+      </script>
+
+    {% endblock content %}
+
+    
+
